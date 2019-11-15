@@ -30,20 +30,21 @@ namespace BooksManagementLib
             Markup = markup;
             Rating = the_rating_of_demand;
         }
-        public string ShowInfo()
+        public StringBuilder ShowInfo()
         {
-            string str="Название: "+Title+ "\n"+"Авторы: ";
+            StringBuilder str = new StringBuilder();
+            str.Append(string.Format("Название: " + Title + "\n" + "Авторы: "));
             for(int i=0;i<Authors.Count-1;i++)
             {
-                str += Authors[i] + ", ";
+                str.Append(string.Format(Authors[i] + ", "));
             }
-            str += Authors[Authors.Count - 1] + "\n"+"Дата публикации: "+PublishDate+ "\n"+"Издательство: "+Publisher+ "\n"+"Жанры: ";
+            str.Append(Authors[Authors.Count - 1] + "\n" + "Дата публикации: " + PublishDate + "\n" + "Издательство: " + Publisher + "\n" + "Жанры: ");
             for (int i = 0; i < Genre.Count - 1; i++)
             {
-                str += Genre[i] + ", ";
+                str.Append(Genre[i] + ", ");
             }
-            str += Genre[Genre.Count - 1] + "\n" + "Колличество страниц: " + PageCount + "\n" + "Цена: " + Price + "\n" 
-                + "Розничная цена: " + Markup + "\n" + "Рейтинг спроса: " + Rating;
+            str.Append(Genre[Genre.Count - 1] + "\n" + "Колличество страниц: " + PageCount + "\n" + "Цена: " + Price + "\n"
+                + "Розничная цена: " + Markup + "\n" + "Рейтинг спроса: " + Rating);
             return str;
         }
     }
