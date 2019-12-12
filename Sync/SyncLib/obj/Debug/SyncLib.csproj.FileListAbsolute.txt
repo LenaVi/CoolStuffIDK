@@ -1,0 +1,5 @@
+C:\Users\stalk\Documents\GitHub\Students\CoolStuffIDK\Sync\SyncLib\obj\Debug\SyncLib.csproj.CoreCompileInputs.cache
+C:\Users\stalk\Documents\GitHub\Students\CoolStuffIDK\Sync\SyncLib\bin\Debug\SyncLib.dll
+C:\Users\stalk\Documents\GitHub\Students\CoolStuffIDK\Sync\SyncLib\bin\Debug\SyncLib.pdb
+C:\Users\stalk\Documents\GitHub\Students\CoolStuffIDK\Sync\SyncLib\obj\Debug\SyncLib.dll
+C:\Users\stalk\Documents\GitHub\Students\CoolStuffIDK\Sync\SyncLib\obj\Debug\SyncLib.pdb

@@ -1,10 +1,12 @@
-﻿using System.IO;
+﻿using SyncLib;
+using System.IO;
+using System.Windows.Controls;
 
-namespace SyncLib.Loggers
+namespace App
 {
     public class LoggerFactory
     {
-        public static ILogger GetLogger(LoggerType logType, TextWriter writer)
+        public static ILogger GetLogger(LoggerType logType, TextBox writer)
         {
             switch (logType)
             {

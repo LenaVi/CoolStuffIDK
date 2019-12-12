@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace SyncLib
+namespace App
 {
     public enum LoggerType
     {

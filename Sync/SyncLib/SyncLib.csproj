@@ -31,6 +31,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -53,11 +54,8 @@
     <Compile Include="Conf\ExistFileConflict.cs" />
     <Compile Include="Seeker\DirectoryChecker.cs" />
     <Compile Include="Seeker\FileChecker.cs" />
-    <Compile Include="Sync.cs" />
     <Compile Include="Seeker\ConflictSeekerFactory.cs" />
     <Compile Include="ILogger.cs" />
-    <Compile Include="LoggerFactory.cs" />
-    <Compile Include="LoggerType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Seeker\DefaultConflictSeeker.cs" />
     <Compile Include="Seeker\RemoveConflictSeeker.cs" />

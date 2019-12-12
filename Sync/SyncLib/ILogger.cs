@@ -1,10 +1,11 @@
 ﻿using System.IO;
+using System.Windows.Controls;
 
 namespace SyncLib
 {
     public interface ILogger : IVisitor
     {
-        TextWriter Writer { get; }
+        TextBox Writer { get; }
         void Log();
     }
 }
