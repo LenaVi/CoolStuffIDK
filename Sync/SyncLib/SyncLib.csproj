@@ -41,9 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Conf\ConflictType.cs" />
+    <Compile Include="Conf\IConflict.cs" />
     <Compile Include="IVisitor.cs" />
     <Compile Include="ResolverVisitor.cs" />
     <Compile Include="Seeker\BaseSeeker.cs" />
+    <Compile Include="Conf\DifferentContentConflict.cs" />
+    <Compile Include="Conf\NoExistDirectoryConflict.cs" />
+    <Compile Include="Conf\NoExistFileConflict.cs" />
+    <Compile Include="Conf\ExistDirectoryConflict.cs" />
+    <Compile Include="Conf\ExistFileConflict.cs" />
     <Compile Include="Sync.cs" />
     <Compile Include="Seeker\ConflictSeekerFactory.cs" />
     <Compile Include="ILogger.cs" />
