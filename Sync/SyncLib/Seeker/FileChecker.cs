@@ -1,14 +1,26 @@
-﻿namespace SyncLib
-{
-    internal class FileChecker
-    {
-        private string slavePath;
-        private string masterPath;
+﻿using System.IO;
 
-        public FileChecker(string slavePath, string masterPath)
+namespace SyncLib
+{
+    public class FileChecker
+    {
+        private readonly string source;
+        private readonly string target;
+
+        public FileChecker(string master, string slave)
         {
-            this.slavePath = slavePath;
-            this.masterPath = masterPath;
+            source = master;
+            target = slave;
+        }
+        public FileConflictType GetTypeConflict(string shortCut)
+        {
+            if (!File.Exists(target + shortCut))
+                return FileConflictType.NoExistConflict;
+
+            if (new FileInfo(source + shortCut).Length != new FileInfo(target + shortCut).Length)
+                return FileConflictType.DifferentContent;
+
+            return FileConflictType.NoConflict;
         }
     }
 }

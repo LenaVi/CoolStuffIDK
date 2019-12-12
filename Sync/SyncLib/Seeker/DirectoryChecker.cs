@@ -1,12 +1,20 @@
-﻿namespace SyncLib
-{
-    internal class DirectoryChecker
-    {
-        private string masterPath;
+﻿using System.IO;
 
-        public DirectoryChecker(string masterPath)
+namespace SyncLib
+{
+    public class DirectoryChecker
+    {
+        private readonly string mainPath;
+
+        public DirectoryChecker(string path)
         {
-            this.masterPath = masterPath;
+            mainPath = path;
+        }
+        public DirectoryConflictType GetTypeConflict(string relativePath)
+        {
+            if (Directory.Exists(mainPath + relativePath)) return DirectoryConflictType.ExistConflict;
+
+            return DirectoryConflictType.NoExistConflict;
         }
     }
 }

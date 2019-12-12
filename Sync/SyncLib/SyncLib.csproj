@@ -51,6 +51,8 @@
     <Compile Include="Conf\NoExistFileConflict.cs" />
     <Compile Include="Conf\ExistDirectoryConflict.cs" />
     <Compile Include="Conf\ExistFileConflict.cs" />
+    <Compile Include="Seeker\DirectoryChecker.cs" />
+    <Compile Include="Seeker\FileChecker.cs" />
     <Compile Include="Sync.cs" />
     <Compile Include="Seeker\ConflictSeekerFactory.cs" />
     <Compile Include="ILogger.cs" />
