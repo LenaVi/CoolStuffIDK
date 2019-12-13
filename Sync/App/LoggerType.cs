@@ -2,7 +2,7 @@
 
 namespace App
 {
-    public enum LoggerType
+    public enum LoggerTypes
     {
         Silent,
         Summary,

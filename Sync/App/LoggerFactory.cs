@@ -6,13 +6,13 @@ namespace App
 {
     public class LoggerFactory
     {
-        public static ILogger GetLogger(LoggerType logType, TextBox writer)
+        public static ILogger GetLogger(LoggerTypes logType, TextBox writer)
         {
             switch (logType)
             {
-                case LoggerType.Silent:
+                case LoggerTypes.Silent:
                     return new SilentLoggerVisitor();
-                case LoggerType.Verbose:
+                case LoggerTypes.Verbose:
                     return new VerboseLoggerVisitor(writer);
                 default:
                     return new SummaryLoggerVisitor(writer);

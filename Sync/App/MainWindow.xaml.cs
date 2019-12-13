@@ -1,19 +1,7 @@
 ﻿using SyncLib;
 using SyncLib.Seeker;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Forms;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace App
 {
@@ -63,11 +51,11 @@ namespace App
                 (NoDeleteOption.IsChecked == true || DeleteOption.IsChecked == true))
             {
                 if (NoLog.IsChecked == true)
-                { logger = LoggerFactory.GetLogger(LoggerType.Silent, txt); }
+                { logger = LoggerFactory.GetLogger(LoggerTypes.Silent, txt); }
                 if (Summary.IsChecked == true)
-                { logger = LoggerFactory.GetLogger(LoggerType.Summary, txt); }
+                { logger = LoggerFactory.GetLogger(LoggerTypes.Summary, txt); }
                 else
-                { logger = LoggerFactory.GetLogger(LoggerType.Verbose, txt); }
+                { logger = LoggerFactory.GetLogger(LoggerTypes.Verbose, txt); }
                 if (NoDeleteOption.IsChecked == true)
                 { noDeleteOption = true; }
                 else { noDeleteOption = false; }
