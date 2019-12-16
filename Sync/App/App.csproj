@@ -7,7 +7,7 @@
     <ProjectGuid>{828135BF-CFED-4540-9BDD-BE30B0626838}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>App</RootNamespace>
-    <AssemblyName>App</AssemblyName>
+    <AssemblyName>Apps</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -57,11 +57,27 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CreativeForm.xaml.cs">
+      <DependentUpon>CreativeForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteMod.cs" />
     <Compile Include="LoggerFactory.cs" />
     <Compile Include="LoggerType.cs" />
+    <Compile Include="MainWin.xaml.cs">
+      <DependentUpon>MainWin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PairMasterSlave.cs" />
     <Compile Include="SilentLoggerVisitor.cs" />
     <Compile Include="SummaryLoggerVisitor.cs" />
     <Compile Include="VerboseLoggerVisitor.cs" />
+    <Page Include="CreativeForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
