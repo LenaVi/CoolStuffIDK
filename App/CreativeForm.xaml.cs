@@ -21,12 +21,16 @@ namespace App
         public CreativeForm(PairMasterSlave pair)
         {
             InitializeComponent();
+
             CurrentValue = pair;
+
             master.Text = CurrentValue.Master;
             slave.Text = CurrentValue.Slave;
+
             if (CurrentValue.NoDelete)
                 noDelete.SelectedItem = noDelete.Items[1];
             else noDelete.SelectedItem = noDelete.Items[1];
+
             switch (CurrentValue.TypeLogger)
             {
                 case LoggerTypes.Silent: logType.SelectedItem = logType.Items[0]; break;
@@ -81,12 +85,14 @@ namespace App
                     CurrentValue.Master = master.Text;
                     CurrentValue.Slave = slave.Text;
                     CurrentValue.NoDelete = Convert.ToBoolean(noDelete.SelectedIndex);
+
                     switch (logType.SelectedIndex)
                     {
                         case 0: CurrentValue.TypeLogger = LoggerTypes.Silent; break;
                         case 2: CurrentValue.TypeLogger = LoggerTypes.Verbose; break;
                         default: CurrentValue.TypeLogger = LoggerTypes.Summary; break;
                     }
+
                     DialogResult = true;
                 }
             }

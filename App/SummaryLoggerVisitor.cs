@@ -28,9 +28,9 @@ namespace App
 
         public void Log()
         {
-            Writer.AppendText($"Was copied {CopiedCount}" + Environment.NewLine +
-                $"Was deleted {DeletedCount}" + Environment.NewLine +
-                $"Was updated {UpdatedCount}" + Environment.NewLine);
+            Writer.AppendText($"Было скопировано {CopiedCount}" + Environment.NewLine +
+                $"Было удалено {DeletedCount}" + Environment.NewLine +
+                $"Было обновлено {UpdatedCount}" + Environment.NewLine);
         }
     }
 }

@@ -20,7 +20,7 @@ namespace App
         private ILogger logger;
         private BaseSeeker conflictSeeker;
         private PairMasterSlave pair;
-            
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             CreativeForm form = new CreativeForm();
@@ -31,7 +31,7 @@ namespace App
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
-            if(data.SelectedIndex != -1)
+            if (data.SelectedIndex != -1)
                 data.Items.RemoveAt(data.SelectedIndex);
         }
 
@@ -44,7 +44,8 @@ namespace App
 
                 conflictSeeker = ConflictSeekerFactory.GetConflictSeeker(pair.NoDelete, pair.Master, pair.Slave);
 
-                conflictSeeker.GetSlaveConflicts().ForEach(x => {
+                conflictSeeker.GetSlaveConflicts().ForEach(x =>
+                {
                     x.Accept(new ResolverVisitor());
                     x.Accept(logger);
                 });
@@ -59,7 +60,8 @@ namespace App
 
                 conflictSeeker = ConflictSeekerFactory.GetConflictSeeker(pair.NoDelete, pair.Master, pair.Slave);
 
-                conflictSeeker.GetMasterConflict().ForEach(x => {
+                conflictSeeker.GetMasterConflict().ForEach(x =>
+                {
                     x.Accept(new ResolverVisitor());
                     x.Accept(logger);
                 });

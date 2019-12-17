@@ -24,27 +24,27 @@ namespace App
 
         public void Visit(DifferentContentConflict conflict)
         {
-            logs.Add($"File {conflict.DestinationPath} was changed to {conflict.SourcePath}");
+            logs.Add($"Файл {conflict.DestinationPath} изменен в соответсвии с {conflict.SourcePath}");
         }
 
         public void Visit(ExistDirectoryConflict conflict)
         {
-            logs.Add($"Directory {conflict.DirectoryPath} was deleted");
+            logs.Add($"Директория {conflict.DirectoryPath} удалена");
         }
 
         public void Visit(ExistFileConflict conflict)
         {
-            logs.Add($"File {conflict.FilePath} was deleted");
+            logs.Add($"Файл {conflict.FilePath} удален");
         }
 
         public void Visit(NoExistDirectoryConflict conflict)
         {
-            logs.Add($"Directory {conflict.DirectoryPath} was created");
+            logs.Add($"Создание директории {conflict.DirectoryPath}");
         }
 
         public void Visit(NoExistFileConflict conflict)
         {
-            logs.Add($"File {conflict.DestinationPath} was copied from {conflict.SourcePath}");
+            logs.Add($"Файл {conflict.DestinationPath} скопирован из {conflict.SourcePath}");
         }
     }
 }
