@@ -22,8 +22,8 @@ namespace App
         {
             InitializeComponent();
             CurrentValue = pair;
-                master.Text = CurrentValue.Master;
-                slave.Text = CurrentValue.Slave;
+            master.Text = CurrentValue.Master;
+            slave.Text = CurrentValue.Slave;
             if (CurrentValue.NoDelete)
                 noDelete.SelectedItem = noDelete.Items[1];
             else noDelete.SelectedItem = noDelete.Items[1];
