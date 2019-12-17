@@ -1,0 +1,6 @@
+C:\Users\USER\Desktop\МП\CoolStuffIDK-master\BooksManagement\BooksManagementLib\bin\Debug\BooksManagementLib.dll
+C:\Users\USER\Desktop\МП\CoolStuffIDK-master\BooksManagement\BooksManagementLib\bin\Debug\BooksManagementLib.pdb
+C:\Users\USER\Desktop\МП\CoolStuffIDK-master\BooksManagement\BooksManagementLib\obj\Debug\BooksManagementLib.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\МП\CoolStuffIDK-master\BooksManagement\BooksManagementLib\obj\Debug\BooksManagementLib.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\МП\CoolStuffIDK-master\BooksManagement\BooksManagementLib\obj\Debug\BooksManagementLib.dll
+C:\Users\USER\Desktop\МП\CoolStuffIDK-master\BooksManagement\BooksManagementLib\obj\Debug\BooksManagementLib.pdb
