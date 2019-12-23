@@ -10,3 +10,9 @@ C:\Users\USER\Desktop\МП\CoolStuffIDK-master\Sync\SyncLib\obj\Debug\SyncLib.cs
 C:\Users\USER\Desktop\МП\CoolStuffIDK-master\Sync\SyncLib\obj\Debug\SyncLib.dll
 C:\Users\USER\Desktop\МП\CoolStuffIDK-master\Sync\SyncLib\obj\Debug\SyncLib.pdb
 C:\Users\stalk\Documents\GitHub\Students\CoolStuffIDK\Sync\SyncLib\obj\Debug\SyncLib.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\МП\CoolStuffIDK-master\SyncLib\bin\Debug\SyncLib.dll
+C:\Users\USER\Desktop\МП\CoolStuffIDK-master\SyncLib\bin\Debug\SyncLib.pdb
+C:\Users\USER\Desktop\МП\CoolStuffIDK-master\SyncLib\obj\Debug\SyncLib.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\МП\CoolStuffIDK-master\SyncLib\obj\Debug\SyncLib.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\МП\CoolStuffIDK-master\SyncLib\obj\Debug\SyncLib.dll
+C:\Users\USER\Desktop\МП\CoolStuffIDK-master\SyncLib\obj\Debug\SyncLib.pdb
