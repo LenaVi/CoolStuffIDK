@@ -137,7 +137,7 @@ namespace App
         {
             OpenFileDialog dlg = new OpenFileDialog();
 
-            dlg.Filter = "Text files(*.xml)|*.xml|All files(*.*)|*.xml";
+            dlg.Filter = "Text files(result*.xml)|result*.xml|All files(*.*)|result*.xml";
 
             if (dlg.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
@@ -189,7 +189,7 @@ namespace App
         {
             OpenFileDialog dlg = new OpenFileDialog();
 
-            dlg.Filter = "Text files(*.xml)|*.xml|All files(*.*)|*.xml";
+            dlg.Filter = "Text files(scenario*.xml)|scenario*.xml|All files(*.*)|scenario*.xml";
 
             if (dlg.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
