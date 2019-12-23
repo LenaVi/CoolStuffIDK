@@ -10,6 +10,7 @@
     <Grid>
 
         <Button Content="Добавить" HorizontalAlignment="Left" Margin="10,366,0,0" VerticalAlignment="Top" Width="94" Click="Button_Click"/>
+        <Button Content="Очистить" HorizontalAlignment="Left" Margin="139,366,0,0" VerticalAlignment="Top" Width="94" Click="RemoveData_Click"/>
         <Button Content="Слить" HorizontalAlignment="Right" VerticalAlignment="Top" Click="Button_Click_1" Margin="0,366,436,0" Width="61"/>
         <ListView x:Name="data" MouseDoubleClick="Change" Margin="10,10,436,77" RenderTransformOrigin="0.5,0.5">
             <ListView.RenderTransform>
@@ -36,7 +37,10 @@
 
             </ListView.View>
         </ListView>
-        <TextBox x:Name="log" HorizontalAlignment="Left" Height="409" Margin="407,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="349" IsReadOnly="True" />
+        <TextBox x:Name="log" HorizontalAlignment="Left" Height="343" Margin="407,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="349" IsReadOnly="True" />
+        <Button Content="Очистить" HorizontalAlignment="Left" Margin="407,366,0,0" VerticalAlignment="Top" Width="94" Click="RemoveLog_Click"/>
+        <Button Content="Загрузить" HorizontalAlignment="Left" Margin="534,366,0,0" VerticalAlignment="Top" Width="94" Click="Load_Click"/>
+        <Button Content="Сохранить" HorizontalAlignment="Left" Margin="662,366,0,0" VerticalAlignment="Top" Width="94" Click="Save_Click"/>
 
     </Grid>
 
