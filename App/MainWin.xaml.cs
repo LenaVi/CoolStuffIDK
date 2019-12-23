@@ -107,6 +107,7 @@ namespace App
         private void Load_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog dlg = new OpenFileDialog();
+            dlg.Filter = "Text files(*.xml)|*.xml|All files(*.*)|*.xml";
             if (dlg.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 if (dlg.FileName == null)
