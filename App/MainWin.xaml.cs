@@ -32,7 +32,26 @@ namespace App
             CreativeForm form = new CreativeForm();
 
             if (form.ShowDialog() == true)
-                data.Items.Add(form.CurrentValue);
+            {
+                bool isValid = true;
+
+                foreach (var item in data.Items)
+                {
+                    PairMasterSlave pair = (PairMasterSlave)item;
+                    if (pair.Slave.Equals(form.CurrentValue.Slave) || pair.Master.Equals(form.CurrentValue.Slave) ||
+                        pair.Slave.Equals(form.CurrentValue.Master))
+                    {
+                        isValid = false;
+
+                        break;
+                    }
+                }
+
+                if (isValid)
+                    data.Items.Add(form.CurrentValue);
+                else System.Windows.Forms.MessageBox.Show("К сожалению, выбранная вами подчиненная папка уже занята");
+            }
+
         }
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
@@ -56,7 +75,7 @@ namespace App
                     x.Accept(logger);
                 });
 
-                log.Text += string.Format("Синхронезируем " + pair.Master + " и " + pair.Slave +"\n");
+                log.Text += string.Format("Синхронезируем " + pair.Master + " и " + pair.Slave + "\n");
                 logger.Log();
             }
 

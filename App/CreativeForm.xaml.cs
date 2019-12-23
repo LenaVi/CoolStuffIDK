@@ -80,7 +80,7 @@ namespace App
                 {
                     System.Windows.MessageBox.Show(string.Format("Папки " + slave.Text + " не существует"));
                 }
-                else if(slave.Text==master.Text)
+                else if (slave.Text == master.Text)
                 {
                     System.Windows.MessageBox.Show(string.Format("Нельзя выбрать одну папку в качестве главной и подчиненной"));
                 }

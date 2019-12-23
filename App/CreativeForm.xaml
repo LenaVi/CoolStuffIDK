@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:App"
         mc:Ignorable="d"
-        Title="CreativeForm" Height="307.361" Width="431.881">
+        Title="CreativeForm" Height="307.361" Width="431.881" ResizeMode="NoResize">
     <Grid Margin="0,0,2,0">
         <TextBlock HorizontalAlignment="Left" Margin="42,48,0,0" TextWrapping="Wrap" Text="Главная папка" VerticalAlignment="Top"/>
         <TextBox x:Name="master" HorizontalAlignment="Left" Height="20" Margin="136,48,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="166"/>
