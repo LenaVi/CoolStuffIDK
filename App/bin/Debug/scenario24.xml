@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<ArrayOfPairMasterSlave xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PairMasterSlave>
+    <Master>C:\Users\stalk\Desktop\мусор, который можно было бы и разобрать</Master>
+    <Slave>C:\Users\stalk\Desktop\test</Slave>
+    <NoDelete>true</NoDelete>
+    <TypeLogger>Summary</TypeLogger>
+  </PairMasterSlave>
+  <PairMasterSlave>
+    <Master>C:\Users\stalk\Desktop\Tor Browser</Master>
+    <Slave>C:\Users\stalk\Desktop\еще одна папка боли</Slave>
+    <NoDelete>true</NoDelete>
+    <TypeLogger>Summary</TypeLogger>
+  </PairMasterSlave>
+</ArrayOfPairMasterSlave>
